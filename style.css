@@ -290,7 +290,7 @@ legend{
   opacity: .2;
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1000px){
   .wrapper{
     padding: 1rem;
   }
