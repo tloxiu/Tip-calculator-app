@@ -195,6 +195,7 @@ legend{
   max-width: 9rem;
   padding: 0.5rem 3rem;
   transition: .3s;
+  font-size: 1.5rem;
 }
 
 .option-btn:hover{
@@ -297,12 +298,12 @@ legend{
   .card{
     max-width: fit-content;
     flex-direction: row;
-    padding: 3rem;
+    padding: 2.8em;
     border-radius: 25px;
   }
   .logo-container{
     margin-top: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
   .logo-img{
     width: 80px;
@@ -337,7 +338,7 @@ legend{
     margin: 0;
   }
   .tip-amount{
-    margin-bottom: 3rem;
+    margin-bottom: 2.2rem;
   }
   .tip-total{
     margin-bottom: 8rem;
