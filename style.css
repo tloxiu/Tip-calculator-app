@@ -66,6 +66,14 @@ textarea:not([rows]) {
   --clr-white: hsl(0, 0%, 100%);
 }
 
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 body{
   background-color: var(--clr-light-grayish-cyan);
   font-family: "Space Mono";
@@ -80,6 +88,7 @@ body{
 }
 
 .card{
+  max-width: 390px;
   background-color: var(--clr-white);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -284,13 +293,9 @@ legend{
 @media screen and (min-width: 1440px){
   .wrapper{
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
   }
   .card{
+    max-width: fit-content;
     flex-direction: row;
     padding: 2rem;
     border-radius: 25px;
