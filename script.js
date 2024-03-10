@@ -8,6 +8,9 @@ const tipTotalPerPerson = document.querySelector(".tip-total-value");
 const resetButton = document.querySelector(".reset-btn");
 
 function areValuesValid(){
+    tipPerPerson.classList.add("opacity-transition");
+    tipTotalPerPerson.classList.add("opacity-transition");
+
     if(inputPeopleNumber.value === "0"){
         errorInfo.style.opacity = "1";
         errorInfo.innerHTML = `Can't be zero`
