@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <main class="wrapper">
+
+    <div class="logo-container">
+      <img class="logo-img" src="assets/logo.svg" alt="A logo of the company - Home">
+    </div>
+
+    <div class="card">
+
+      <form action="#">
+        <fieldset class="fieldset-bill">
+          <label class="label-bill" for="bill">Bill</label>
+          <input class="input-bill" type="number" id="bill" placeholder="0">
+        </fieldset>
+
+        <fieldset class="fieldset-buttons">
+          <legend>Select Tip %</legend>
+          <button class="option-btn" type="button" aria-label="5% tip">5%</button>
+          <button class="option-btn" type="button" aria-label="10% tip">10%</button>
+          <button class="option-btn" type="button" aria-label="15% tip">15%</button>
+          <button class="option-btn" type="button" aria-label="25% tip">25%</button>
+          <button class="option-btn" type="button" aria-label="50% tip">50%</button>
+          <div aria-label="Custom tip input">
+            <label for="custom-tip" class="sr-only">Custom tip:</label>
+            <input class="input-custom-tip" type="number" id="custom-tip" name="custom-tip" placeholder="Custom" >
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset-people-number">
+          <div class="error-container" role="alert" aria-live="assertive" aria-atomic="true">
+            <p class="error opacity-transition"></p>
+          </div>
+          <label class="label-people-number" for="people-number">Number of People</label>
+          <input class="input-people-number" type="number" id="people-number" placeholder="0">
+        </fieldset>
+      </form>
+
+      <section class="result-section">
+        <div class="tip-amount">
+          <div aria-live="assertive">
+            <p class="tip-amount-title">Tip Amount</p>
+            <p class="tip-amount-info">/ person</p>
+          </div>
+          <span class="tip-amount-value opacity-transition">$0.00</span>
+        </div>
+        <div class="tip-total" aria-live="assertive">
+          <div>
+            <p class="tip-total-title">Total</p>
+            <p class="tip-total-info">/ person</p>
+          </div>
+          <span class="tip-total-value opacity-transition">$0.00</span>
+        </div>
+        <div class="reset-btn-container">
+          <button class="reset-btn disabled" type="button">Reset</button>
+        </div>
+      </section>
+
+    </div>
+  </main> 
+  <script src="script.js"></script>
+</body>
+</html>
