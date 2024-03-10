@@ -297,7 +297,7 @@ legend{
   .card{
     max-width: fit-content;
     flex-direction: row;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 25px;
   }
   .logo-container{
